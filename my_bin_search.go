@@ -22,7 +22,7 @@ func main() {
 		el, err := strconv.Atoi(os.Args[1])
 		if err == nil {
 			c := bin_search(el, s[:])
-			if c == 1 {
+			if c == -1 {
 				fmt.Println("Element not found or incorrect array")
 			} else {
 				fmt.Println(c)
@@ -57,5 +57,5 @@ func bin_search(el int, arr []int) int {
 			}
 		}
 	}
-	return (1)
+	return (-1)
 }
